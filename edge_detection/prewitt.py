@@ -78,3 +78,4 @@ def prewitt_edge_detection(
     
     return magnitude, gradient_x, gradient_y
 
+

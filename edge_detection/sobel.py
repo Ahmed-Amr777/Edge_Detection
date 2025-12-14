@@ -46,15 +46,15 @@ def sobel_edge_detection(
     
     # Sobel kernels (using 0.5, -0.5, 0 pattern)
     sobel_x = np.array([
-        [-0.5, 0, 0.5],
         [-1, 0, 1],
-        [-0.5, 0, 0.5]
+        [-2, 0, 2],
+        [-1, 0, 1]
     ], dtype=np.float64)
     
     sobel_y = np.array([
-        [-0.5, -1, -0.5],
+        [-1, -2, -1],
         [0, 0, 0],
-        [0.5, 1, 0.5]
+        [1 ,2, 1]
     ], dtype=np.float64)
     
     # Calculate gradients
